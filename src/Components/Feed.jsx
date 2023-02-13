@@ -1,8 +1,9 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 function Feed() {
   return (
-    <div>Feed</div>
+    <Box gcolor={"skyblue"}>Feed</Box>
   )
 }
 
