@@ -19,7 +19,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function Feed() {
   return (
-    <Box bgcolor={"white"} flex={4} p={2}>
+    <Box  flex={4} p={2}>
       <Card>
         <CardHeader
           avatar={

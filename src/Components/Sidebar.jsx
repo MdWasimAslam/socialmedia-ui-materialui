@@ -15,9 +15,9 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 import shadows from "@mui/material/styles/shadows";
 
-function Sidebar() {
+function Sidebar({mode,setMode}) {
   return (
-    <Box bgcolor={"white"}  flex={1} p={2}
+    <Box   flex={1} p={2}
          sx={{display:{xs:"none",
                sm:"block",
                }}} >
@@ -101,7 +101,7 @@ function Sidebar() {
             <ListItemIcon>
             <ModeNightIcon/>
             </ListItemIcon>
-            <Switch  defaultChecked />
+            <Switch   onChange={e=>setMode(mode==="light"?"dark":"light")}/>
           </ListItemButton>
         </ListItem>
 

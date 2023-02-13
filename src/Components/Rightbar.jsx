@@ -17,7 +17,7 @@ import InboxIcon from "@mui/icons-material/Inbox";
 function Rightbar() {
   return (
     <Box
-      bgcolor={"white"}
+      
       flex={2}
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
