@@ -3,7 +3,7 @@ import React from 'react'
 
 function Feed() {
   return (
-    <Box gcolor={"skyblue"}>Feed</Box>
+    <Box bgcolor={"pink"}>Feed</Box>
   )
 }
 
