@@ -21,6 +21,8 @@ function Sidebar() {
          sx={{display:{xs:"none",
                sm:"block",
                }}} >
+    <Box sx={{position:"fixed"}}>
+
           <List>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
@@ -105,6 +107,7 @@ function Sidebar() {
 
 
       </List>
+      </Box>
     </Box>
   )
 }
