@@ -7,28 +7,26 @@ import Navbar from "./Components/Navbar";
 import { createTheme, Stack, ThemeProvider } from "@mui/material";
 
 function App() {
-const [mode, setMode] = useState("light")
+  const [mode, setMode] = useState("light");
 
-const darkTheme = createTheme({
-  palette:{
-    mode:mode
-  }
-})
-
+  const darkTheme = createTheme({
+    palette: {
+      mode: mode,
+    },
+  });
 
   return (
     <>
-    <ThemeProvider theme={darkTheme}>
-    <Box  bgcolor={"background.default"} color={"text.primary"} >
-        <Navbar />
-        <Stack direction="row" spacing={2}  justifyContent="space-between">
-          <Sidebar setMode={setMode} mode={mode} />
-          <Feed />
-          <Rightbar />
-        </Stack>
-      </Box>
-    </ThemeProvider>
-
+      <ThemeProvider theme={darkTheme}>
+        <Box bgcolor={"background.default"} color={"text.primary"}>
+          <Navbar />
+          <Stack direction="row" spacing={2} justifyContent="space-between">
+            <Sidebar setMode={setMode} mode={mode} />
+            <Feed />
+            <Rightbar />
+          </Stack>
+        </Box>
+      </ThemeProvider>
     </>
   );
 }
